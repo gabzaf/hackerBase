@@ -1,1 +1,1 @@
-find . -type f -size -57c -exec cat {} + | sort | md5sum
+find . -type f -size +55c -size -98c -print0 | sort -z | xargs -0 cat | md5sum
