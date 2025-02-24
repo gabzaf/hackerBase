@@ -1,3 +1,5 @@
+To connect on hackerBase container: ssh -i /path/to/private_key hacker@ip_address
+
 #Exercise 1
 
 -- Calculate the md5sum of the basenames of all files, sorted in asceding order, that meet the criteria of having their size included between 37 and
