@@ -1,0 +1,11 @@
+#Exercise 1
+
+-- Calculate the md5 hash of the basename of all files, sorted in ascneding order, that mett the criteria of having a size equal to 55 bytes and of having been updated after Tuesday, 18 Jul 2023 at 10:11.
+
+#Exercise 2
+
+-- You need to find all the files that have an header starting with <%GIF. Calculate the md5 hash of the accrued content of these files, sorted in ascending order that meet the criteria of having been updated before Sunday, 23 Jul 2023 at 10:56.
+
+#Exercise 3
+
+-- You're given several log files that record visitors to a website by their IP address. Your task is to analyze these logs to find out how many unique visitors the website had each day. Compute the md5 hash for all files using as input the modification date, the basename and the number of unique visitors. Order by modification date
