@@ -1,0 +1,43 @@
+#Exercise 1
+
+-- Calculate the md5sum of the basenames of all files, sorted in asceding order, that meet the criteria of having their size included between 37 and
+49 bytes
+
+-> WHATS THE basename? 
+The basename of a file is simply the filename itself, without any directory path information.  Think of it as the "name" part of the full file
+location. Example: If a file's full path is /path/to/my/document.txt, then the basename is just document.txt. 
+
+-> WHATS the MD5?
+Message Digest 5 or MD5 is a cryptographic hash function. This means it takes any input (like a text string, a file's contents, or in our case, a
+filename) and produces a fixed-size string of characters, called a "hash" or "digest."
+Crucially, MD5 is designed so that:
+- The same input always produces the same output: If you give MD5 the same input twice, you'll get the exact same hash both times.
+- Even a tiny change in the input drastically changes the output: If you alter even a single character in the input, the resulting MD5 hash will be
+completely different.
+- It's computationally infeasible to reverse the process: You can't easily figure out the original input just by looking at the MD5 hash.
+
+-> WHATS the MD5Sum?
+MD5 Sums (or MD5 Hashes): The MD5 sum is the output, the string of characters, that MD5 produces for a given input. It's the "fingerprint" of the
+input. In the context of files, the MD5 sum of a file's contents is often used to verify that the file hasn't been changed or corrupted. In our case,
+we're calculating the MD5 sum of the basename of the file.
+
+In summary: When we talk about "MD5 sums of the basenames of all files," we mean:
+- Take the filename part (basename) of each file.
+- Use the MD5 algorithm to create a unique "fingerprint" (MD5 sum) of that filename.
+- We'll end up with a list of filenames and their corresponding MD5 sums (fingerprints).
+
+-> WHY ARE MD5 sums useful?
+
+MD5 sums are useful for:
+- File integrity verification: If you download a file and its MD5 sum doesn't match the one provided by the source, you know the file has been altered
+(or corrupted during download).
+- Data comparison: You can quickly compare the MD5 sums of two files to see if they are identical without having to compare the entire file contents.
+This is very efficient.
+- Security (though MD5 is considered cryptographically broken for certain applications): While MD5 is no longer recommended for strong cryptographic
+security (like password storage), it's still useful for basic integrity checks.
+
+#Exercise 2
+
+-- Calculate the md5sum of the content of all files, sorted in ascending order, that meet the criteria of having a size greater than or equal to 205
+bytes
+
